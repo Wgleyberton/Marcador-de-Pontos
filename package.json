@@ -1,7 +1,7 @@
 {
   "name": "marcador-de-pontos",
   "version": "0.1.0",
-  "homepage": "https://{Wgleyberton}.github.io/{Marcador-de-pontos}/",
+  "homepage": "marcador-de-pontos/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

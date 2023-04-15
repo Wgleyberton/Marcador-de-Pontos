@@ -107,13 +107,13 @@ const Counter = () => {
                     
                     <div className="vantagensAzul">
                         <div className="vantagemAzul">
-                            <h1>Vantagens</h1>
+                            <h3>Vantagens</h3>
                             <span>{vantagemAzul}</span>
                             <button onClick={() => handleOnClickVantagemAzul('-')}>-</button>
                             <button onClick={() => handleOnClickVantagemAzul('+')}>+</button>
                         </div>
                         <div className="desvantagemAzul">
-                            <h1>Desvantagens</h1>
+                            <h3>Desvantagens</h3>
                             <span>{desvantagemAzul}</span>
                             <button onClick={() => handleOnClickdesVantagemAzul('-')}>-</button>
                             <button onClick={() => handleOnClickdesVantagemAzul('+')}>+</button>
@@ -141,13 +141,13 @@ const Counter = () => {
                     </div>
                     <div className="vantagensVermelho">
                         <div className="vantagemVermelho">
-                            <h1>Vantagens</h1>
+                            <h3>Vantagens</h3>
                             <span>{vantagemVermelho}</span>
                             <button onClick={() => handleOnClickVantagemVermelho('-')}>-</button>
                             <button onClick={() => handleOnClickVantagemVermelho('+')}>+</button>
                         </div>
                         <div className="desvantagemVermelho">
-                            <h1>Desvantagens</h1>
+                            <h3>Desvantagens</h3>
                             <span>{desvantagemVermelho}</span>
                             <button onClick={() => handleOnClickdesVantagemVermelho('-')}>-</button>
                             <button onClick={() => handleOnClickdesVantagemVermelho('+')}>+</button>
@@ -155,6 +155,7 @@ const Counter = () => {
                     </div>
                     
                     <div className="botoesVermelho">
+                        
                         <button onClick={() => handleOnClickDoisPontos('vermelho')}>Joelho sobre Barriga(+2)</button>
                         <button onClick={() => handleOnClickDoisPontos('vermelho')}>Queda(+2)</button>
                         <button onClick={() => handleOnClickDoisPontos('vermelho')}>Raspagem(+2)</button>
@@ -162,6 +163,7 @@ const Counter = () => {
                         <button onClick={() => handleOnClickQuatroPontos('vermelho')}>Controle pelas Costas(+4)</button>
                         <button onClick={() => handleOnClickQuatroPontos('vermelho')}>Montada pelas Costas(+4)</button>
                         <button onClick={() => handleOnClickQuatroPontos('vermelho')}>Montada(+4)</button>
+                        
                     </div>
                 </div>
             </div>

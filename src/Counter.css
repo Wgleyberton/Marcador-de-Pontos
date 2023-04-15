@@ -1,25 +1,52 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
-}
-.contadores {
- display: flex;
- background-color: black;
- margin: 0;
-}
-.botaozerar{
-    padding: 25px;
+    box-sizing: border-box;
+  }
+  
+  .pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contadores {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     margin: 0;
-}
-.botaozerar button{
-    display: block;
-    font-size: 3em;
-    margin: 0 auto;
-}
-.contadorAzul {
-    width: auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .contadores > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 601px) {
+    .contadores {
+      flex-direction: row;
+    }
+  
+    .contadores > div {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  
+    .contadores > .azul {
+      margin-right: 20px;
+    }
+    .botoesAzul, 
+    .botoesVermelho > div{
+        height: 10px;
+        margin-bottom: 0;
+    }
+  }
+  .contadorAzul {
     margin: 0 5px;
     background-color: blue;
     color: white;
@@ -30,59 +57,65 @@
     display: block;
     font-size: 3em;
 }
-.contadorAzul button {
-    padding: 20px;
-    font-size: 2em;
-}
-.vantagensAzul {
+.vantagensAzul{
     display: flex;
-    width: auto;
+    padding: 50px;
+    text-align: center;
     margin: 0 5px;
-    text-align: center;
     background-color: blue;
 }
-.vantagemAzul {
-    width: 50%;
-    margin: 0;
-    background-color: blue;
-    color: white;
-    padding: 50px;
-}
-.vantagemAzul span {
+.vantagensAzul span{
     display: block;
-    font-size: 2em;
+    font-size: 3em;
 }
-.vantagemAzul button {
-    padding: 10px;
-    font-size: 2em;
-}
-.desvantagemAzul {
+.vantagemAzul{
     width: 50%;
-    margin: 0;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 50px;
 }
-.desvantagemAzul span {
-    display: block;
-    font-size: 2em;
+.desvantagemAzul{
+    width: 50%;
 }
-.desvantagemAzul button {
+.botoesAzul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
-    font-size: 2em;
+    margin: 0 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botoesVermelho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.vantagensVermelho {
+.vantagensVermelho{
     display: flex;
-    width: auto;
-    margin: 0 5px;
+    padding: 50px;
     text-align: center;
+    margin: 0 5px;
     background-color: red;
 }
+.vantagensVermelho span{
+    display: block;
+    font-size: 3em;
+}
+.vantagemVermelho{
 
+    width: 50%;
+}
+.desvantagemVermelho{
+    width: 50%;
+}
 .contadorVermelho {
-    width: auto;
     margin: 0 5px;
     background-color: red;
     color: white;
@@ -93,61 +126,32 @@
     display: block;
     font-size: 3em;
 }
-.contadorVermelho button {
-    padding: 20px;
-    font-size: 2em;
-}
-.vantagemVermelho {
-    width: 50%;
-    margin: 0;
-    background-color: red;
-    color: white;
-    padding: 50px;
-}
-.vantagemVermelho span {
-    display: block;
-    font-size: 2em;
-}
-.vantagemVermelho button {
-    padding: 10px;
-    font-size: 2em;
-}
-.desvantagemVermelho {
-    width: 50%;
-    margin: 0;
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding: 50px;
-}
-.desvantagemVermelho span {
-    display: block;
-    font-size: 2em;
-}
-.desvantagemVermelho button {
-    padding: 10px;
-    font-size: 2em;
-}
 
-.botoesVermelho{
-    width: auto;
-    display: flex;
+  h1 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  h3 {
+    color: white;
+  }
+  
+  span {
+    font-size: 2rem;
+    color: #ffc107;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 10px;
     margin: 0 5px;
-    background-color: red;
-    
-}
-.botoesVermelho button{
-    width: auto;
-    margin: 5px 5px;
-}
-
-.botoesAzul{
-    width: auto;
-    display: flex;
-    margin: 0 5px;
-    background-color: blue;
-}
-.botoesAzul button{
-    width: auto;
-    margin: 5px 5px;
-}
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #ffc107;
+    color: white;
+  }
+  
