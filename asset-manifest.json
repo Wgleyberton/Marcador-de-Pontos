@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/marcador-de-pontos/static/css/main.70219538.css",
+    "main.css": "/marcador-de-pontos/static/css/main.5d21840a.css",
     "main.js": "/marcador-de-pontos/static/js/main.b0e75922.js",
     "index.html": "/marcador-de-pontos/index.html",
-    "main.70219538.css.map": "/marcador-de-pontos/static/css/main.70219538.css.map",
+    "main.5d21840a.css.map": "/marcador-de-pontos/static/css/main.5d21840a.css.map",
     "main.b0e75922.js.map": "/marcador-de-pontos/static/js/main.b0e75922.js.map"
   },
   "entrypoints": [
-    "static/css/main.70219538.css",
+    "static/css/main.5d21840a.css",
     "static/js/main.b0e75922.js"
   ]
 }
